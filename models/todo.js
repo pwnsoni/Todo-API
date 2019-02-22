@@ -6,7 +6,8 @@ mongoose.Promise = global.Promise;
 
 var todoSchema = mongoose.Schema({
     description : String,
-    completed : Boolean 
+    completed : Boolean,
+    completedAt : Date 
 });
 
 module.exports = mongoose.model('Todo', todoSchema);
